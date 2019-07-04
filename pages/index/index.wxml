@@ -1,14 +1,23 @@
 <!--index.wxml-->
 <view class="container">
   <view class="banner">
-    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <image class="banner-image" src="../images/index/top.jpg"></image>
   </view>
   <view class="search">
-    <input class="searchinput" placeholder="这是一个可以自动聚焦的input" auto-focus />
+    <input class="searchinput" placeholder="请输入要查询的物品名字" auto-focus />
+    <button size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="primary">
+      查询
+    </button>
   </view>
-    <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="primary">
-    primary
-  </button>
+  <view class="result">
+    <text></text>
+  </view>
+  <view class="cate-intro">
+    <image class="cate-image" mode="aspectFit" src="../images/index/ico-1.jpg"></image>
+    <image class="cate-image" mode="aspectFit" src="../images/index/ico-2.jpg"></image>
+    <image class="cate-image" mode="aspectFit" src="../images/index/ico-3.jpg"></image>
+    <image class="cate-image" mode="aspectFit" src="../images/index/ico-4.jpg"></image>
+  </view>
 </view>
 <view class="result">
   <text class="result-content"></text>

@@ -1,6 +1,55 @@
 /**index.wxss**/
-
+.search {
+  width: 100%;
+  height: 2rem;
+  margin-top:5rpx;
+  text-align: center;
+}
 .searchinput {
   border: 1rpx #98FB98 solid;
-  height: 2rem;
+  border-right: 0;
+  height: 100%;
+  width: 70%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+button{
+  display: inline-block;
+  height: 102%;
+  margin-right: 0;
+  width: 25%;
+  border-top:0;
+  border-bottom: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  line-height: 2rem;
+  background-color:#98FB98;
+
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner-image {
+  width: 100%;
+  height: 10rem;
+}
+
+.cate-intro{
+  display:flex;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content:space-between;
+
+}
+
+.cate-image{
+  display: flex;
+  flex-shrink: 8;
 }
