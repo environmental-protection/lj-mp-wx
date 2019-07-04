@@ -52,4 +52,6 @@ button{
 .cate-image{
   display: flex;
   flex-shrink: 8;
+  width:23vw;
+  margin-left: 1vw;
 }
