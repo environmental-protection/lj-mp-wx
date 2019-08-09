@@ -13,12 +13,35 @@
     <text></text>
   </view>
   <view class="cate-intro">
-    <image class="cate-image" mode="aspectFit" src="../images/index/ico-1.jpg"></image>
-    <image class="cate-image" mode="aspectFit" src="../images/index/ico-2.jpg"></image>
-    <image class="cate-image" mode="aspectFit" src="../images/index/ico-3.jpg"></image>
-    <image class="cate-image" mode="aspectFit" src="../images/index/ico-4.jpg"></image>
+    <image     wx:for="{{tabIconSH}}" class="cate-image" data-flag="{{item.flag}}" mode="aspectFit"  bindtap="getContent" src="{{item.src}}"></image>
   </view>
 </view>
-<view class="result">
-  <text class="result-content"></text>
+
+<view class="city">
+  <view class="city-sh">
+    <view class="content-youhai" wx:if="{{content=='youhai'}}">
+      <text class="title">有害垃圾</text>
+      <text class="content">
+        <text style="font-size:50rpx;color:red;text-align:left;width:100%;">有害垃圾是指：</text>
+        <text style="display:block;font-size:40rpx;color:red;text-align:left;">
+          废电池、废灯管、废药品、废油漆及其容器等对人体健康或自然环境造成直接或者潜在危害的生活废弃物
+        </text>
+        <text class="middle-block">123</text>
+      </text>
+    </view>
+    <view class="content-kehuishou" wx:elif="{{content=='kehuishou'}}">
+      <text class="title">可回收物</text>
+      <text class="content"></text>
+    </view>
+    <view class="content-kehuishou" wx:elif="{{content=='gan'}}">
+      <text class="title">干垃圾</text>
+      <text class="content"></text>
+    </view>
+    <view class="content-shi" wx:elif="{{content=='shi'}}">
+      <text class="title">湿垃圾</text>
+      <text class="content"></text>
+    </view>
+  </view>
 </view>
+
+

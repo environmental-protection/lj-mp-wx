@@ -18,7 +18,7 @@
 
 button{
   display: inline-block;
-  height: 102%;
+  height: 100%;
   margin-right: 0;
   width: 25%;
   border-top:0;
@@ -54,4 +54,48 @@ button{
   flex-shrink: 8;
   width:23vw;
   margin-left: 1vw;
+  height: 23vw;
 }
+.result{
+  height : 15vw;
+}
+
+.city{
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.city-sh {
+  border: 1rpx solid yellow;
+  padding: 1rpx;
+  margin: 1rpx;
+  width: 90%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.content-youhai{
+  width: 100%;
+  text-align: center;
+}
+.content-youhai .title{
+  width:100%;
+  font-size: 80rpx;
+  color: #FF0400;
+}
+.city-sh .content-youhai .content{
+  border:1rpx dashed #FF0400;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+
+}
+
+.middle-block {
+  width:100%;
+  background-color: #FF0400;
+}
+
+
+
